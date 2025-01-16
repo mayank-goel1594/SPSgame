@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+h1{
+    background-color:darkblue;
+    color: white;
+    height: 100px;
+    line-height: 75px;
+
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.choice:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 25px;
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    gap: 100px;
+    margin-top: 40px;
+}
+.msg-container{
+    margin-top: 40px;
+
+}
+#msg{
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    display: inline;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+        height: 80px;
+        line-height: 60px;
+        width: 630px;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .choices {
+        gap: 25px;
+    }
+
+    .score-board {
+        font-size: 24px;
+        gap: 50px;
+    }
+
+    #msg {
+        font-size: 24px;
+        padding: 8px;
+    }
+}
+
+/* Styles for devices with screen width max 480px */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+        height: 70px;
+        line-height: 50px;
+        width: 430px;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .choices {
+        gap: 15px;
+    }
+
+    .score-board {
+        font-size: 18px;
+        gap: 30px;
+    }
+
+    #msg {
+        font-size: 20px;
+        padding: 6px;
+    }
+}
